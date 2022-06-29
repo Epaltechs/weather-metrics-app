@@ -1,0 +1,65 @@
+99a49233440afb4696fe2ed4a862444c
+"use strict";
+
+var _interopRequireDefault = require("C:\\Users\\Otomfon\\Desktop\\weather-metrics\\node_modules\\babel-preset-react-app\\node_modules\\@babel\\runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = cityReducer;
+exports.getCities = exports.fetchCity = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _axios = _interopRequireDefault(require("axios"));
+
+var _jsxFileName = "C:\\Users\\Otomfon\\Desktop\\weather-metrics\\src\\Redux\\Cities.js";
+const GET_CITY = 'weather-app/cityReducer/getCities';
+const url = 'https://restcountries.com/v3.1/region/africa';
+
+const getCities = payload => ({
+  type: GET_CITY,
+  payload
+});
+
+exports.getCities = getCities;
+
+const fetchCity = () => async dispatch => {
+  const response = await _axios.default.get(url);
+  const data = await response.data;
+  const cities = [];
+
+  try {
+    data.forEach(el => {
+      cities.push({
+        country: el.name.common,
+        flags: el.flags.png,
+        capital: el.capital[0]
+      });
+    });
+    dispatch(getCities(cities));
+  } catch (error) {
+    /*#__PURE__*/
+    _react.default.createElement("h2", {
+      __self: void 0,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 5
+      }
+    }, error);
+  }
+};
+
+exports.fetchCity = fetchCity;
+
+function cityReducer(state = [], action) {
+  switch (action.type) {
+    case GET_CITY:
+      return action.payload;
+
+    default:
+      return state;
+  }
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJHRVRfQ0lUWSIsInVybCIsImdldENpdGllcyIsInBheWxvYWQiLCJ0eXBlIiwiZmV0Y2hDaXR5IiwiZGlzcGF0Y2giLCJyZXNwb25zZSIsImF4aW9zIiwiZ2V0IiwiZGF0YSIsImNpdGllcyIsImZvckVhY2giLCJlbCIsInB1c2giLCJjb3VudHJ5IiwibmFtZSIsImNvbW1vbiIsImZsYWdzIiwicG5nIiwiY2FwaXRhbCIsImVycm9yIiwiY2l0eVJlZHVjZXIiLCJzdGF0ZSIsImFjdGlvbiJdLCJzb3VyY2VzIjpbIkNpdGllcy5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IGF4aW9zIGZyb20gJ2F4aW9zJztcblxuY29uc3QgR0VUX0NJVFkgPSAnd2VhdGhlci1hcHAvY2l0eVJlZHVjZXIvZ2V0Q2l0aWVzJztcblxuY29uc3QgdXJsID0gJ2h0dHBzOi8vcmVzdGNvdW50cmllcy5jb20vdjMuMS9yZWdpb24vYWZyaWNhJztcblxuZXhwb3J0IGNvbnN0IGdldENpdGllcyA9IChwYXlsb2FkKSA9PiAoe1xuICB0eXBlOiBHRVRfQ0lUWSxcbiAgcGF5bG9hZCxcbn0pO1xuXG5leHBvcnQgY29uc3QgZmV0Y2hDaXR5ID0gKCkgPT4gYXN5bmMgKGRpc3BhdGNoKSA9PiB7XG4gIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgYXhpb3MuZ2V0KHVybCk7XG4gIGNvbnN0IGRhdGEgPSBhd2FpdCByZXNwb25zZS5kYXRhO1xuICBjb25zdCBjaXRpZXMgPSBbXTtcbiAgdHJ5IHtcbiAgICBkYXRhLmZvckVhY2goKGVsKSA9PiB7XG4gICAgICBjaXRpZXMucHVzaCh7XG4gICAgICAgIGNvdW50cnk6IGVsLm5hbWUuY29tbW9uLFxuICAgICAgICBmbGFnczogZWwuZmxhZ3MucG5nLFxuICAgICAgICBjYXBpdGFsOiBlbC5jYXBpdGFsWzBdLFxuICAgICAgfSk7XG4gICAgfSk7XG4gICAgZGlzcGF0Y2goZ2V0Q2l0aWVzKGNpdGllcykpO1xuICB9IGNhdGNoIChlcnJvcikge1xuICAgIDxoMj57ZXJyb3J9PC9oMj47XG4gIH1cbn07XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIGNpdHlSZWR1Y2VyKHN0YXRlID0gW10sIGFjdGlvbikge1xuICBzd2l0Y2ggKGFjdGlvbi50eXBlKSB7XG4gICAgY2FzZSBHRVRfQ0lUWTpcbiAgICAgIHJldHVybiBhY3Rpb24ucGF5bG9hZDtcbiAgICBkZWZhdWx0OlxuICAgICAgcmV0dXJuIHN0YXRlO1xuICB9XG59XG4iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFBQTs7QUFDQTs7O0FBRUEsTUFBTUEsUUFBUSxHQUFHLG1DQUFqQjtBQUVBLE1BQU1DLEdBQUcsR0FBRyw4Q0FBWjs7QUFFTyxNQUFNQyxTQUFTLEdBQUlDLE9BQUQsS0FBYztFQUNyQ0MsSUFBSSxFQUFFSixRQUQrQjtFQUVyQ0c7QUFGcUMsQ0FBZCxDQUFsQjs7OztBQUtBLE1BQU1FLFNBQVMsR0FBRyxNQUFNLE1BQU9DLFFBQVAsSUFBb0I7RUFDakQsTUFBTUMsUUFBUSxHQUFHLE1BQU1DLGNBQUEsQ0FBTUMsR0FBTixDQUFVUixHQUFWLENBQXZCO0VBQ0EsTUFBTVMsSUFBSSxHQUFHLE1BQU1ILFFBQVEsQ0FBQ0csSUFBNUI7RUFDQSxNQUFNQyxNQUFNLEdBQUcsRUFBZjs7RUFDQSxJQUFJO0lBQ0ZELElBQUksQ0FBQ0UsT0FBTCxDQUFjQyxFQUFELElBQVE7TUFDbkJGLE1BQU0sQ0FBQ0csSUFBUCxDQUFZO1FBQ1ZDLE9BQU8sRUFBRUYsRUFBRSxDQUFDRyxJQUFILENBQVFDLE1BRFA7UUFFVkMsS0FBSyxFQUFFTCxFQUFFLENBQUNLLEtBQUgsQ0FBU0MsR0FGTjtRQUdWQyxPQUFPLEVBQUVQLEVBQUUsQ0FBQ08sT0FBSCxDQUFXLENBQVg7TUFIQyxDQUFaO0lBS0QsQ0FORDtJQU9BZCxRQUFRLENBQUNKLFNBQVMsQ0FBQ1MsTUFBRCxDQUFWLENBQVI7RUFDRCxDQVRELENBU0UsT0FBT1UsS0FBUCxFQUFjO0lBQ2Q7SUFBQTtNQUFBO01BQUE7UUFBQTtRQUFBO1FBQUE7TUFBQTtJQUFBLEdBQUtBLEtBQUw7RUFDRDtBQUNGLENBaEJNOzs7O0FBa0JRLFNBQVNDLFdBQVQsQ0FBcUJDLEtBQUssR0FBRyxFQUE3QixFQUFpQ0MsTUFBakMsRUFBeUM7RUFDdEQsUUFBUUEsTUFBTSxDQUFDcEIsSUFBZjtJQUNFLEtBQUtKLFFBQUw7TUFDRSxPQUFPd0IsTUFBTSxDQUFDckIsT0FBZDs7SUFDRjtNQUNFLE9BQU9vQixLQUFQO0VBSko7QUFNRCJ9
