@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchData } from '../../Redux/weather';
+import { fetchData } from '../../Redux/Weather';
 
-// import Card from './WeatherCard/card';
-import './detail.css';
+import Card from './WeatherCard/Card';
+import './Detail.css';
 
 function Detail() {
   const location = useLocation();
-  const { capital } = location.state;
+  const { capital } = location.state === null ? '' : location.state;
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -31,6 +31,9 @@ function Detail() {
 
   /* * Get temperature in degree celsious  */
   const convertKelToCelcious = (a, b) => {
+    if (a === b || b === null) {
+      return '';
+    }
     const min = parseInt(a, 10);
     const max = parseInt(b, 10);
     const avg = (min + max) / 2;
@@ -56,7 +59,7 @@ function Detail() {
           <p className="weather-descs">{`The weather now is ${desc}`}</p>
           <div className="weather-icon"><img src={`https://openweathermap.org/img/wn/${icon}.png`} alt="weather-icon" /></div>
         </div>
-        {/* <Card props={weatherData} /> */}
+        <Card props={weatherData} />
 
         <div className="weekly-update">
           <h3 className="weekly-update-title">Weekly Update</h3>

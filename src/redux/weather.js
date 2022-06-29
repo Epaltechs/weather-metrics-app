@@ -11,10 +11,10 @@ export const getData = (payload) => ({
 
 export const fetchData = (location) => async (dispatch) => {
   try {
-    const coodUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&i&appid=5709f5315143352b497276f1f19fb6bc`;
+    const coodUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&i&appid=f1354fda8bec32646187c58f25f48372`;
     const responseCord = await axios.get(coodUrl);
     const { lon, lat } = responseCord.data.coord;
-    const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly&appid=5709f5315143352b497276f1f19fb6bc`;
+    const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly&appid=f1354fda8bec32646187c58f25f48372`;
     const response = await axios.get(url);
     const data = await response.data;
     const weatherData = [];

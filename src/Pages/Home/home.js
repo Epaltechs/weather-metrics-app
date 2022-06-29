@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-// import { GiAfrica } from 'react-icons/gi';
-// import { BsArrowRightCircle } from 'react-icons/bs';
-import './home.css';
+import { GiAfrica } from 'react-icons/gi';
+import { FiSearch } from 'react-icons/fi';
+import { BsArrowRightCircle } from 'react-icons/bs';
+import './Home.css';
 import { Link } from 'react-router-dom';
-import { fetchCity } from '../../Redux/cities';
+import { fetchCity } from '../../Redux/Cities';
 
 function Home() {
   const dispatch = useDispatch();
@@ -22,7 +23,7 @@ function Home() {
 
       <div className="home-header">
         <div className="header-logo center">
-          {/* <GiAfrica /> */}
+          <GiAfrica />
         </div>
         <div className="header-text">
           <h1 className="header-app-name">My Weather Update</h1>
@@ -31,7 +32,10 @@ function Home() {
       </div>
 
       <section className="cities">
-        <input className="search-city" type="text" placeholder="search city" onChange={(e) => dataSearch(e.target.value)} />
+        <div className="search-box">
+          <div className="search-icon"><FiSearch /></div>
+          <input className="search-city" type="text" placeholder="SEARCH COUNTRY" onChange={(e) => dataSearch(e.target.value)} />
+        </div>
         <ul className="city-list">
           {
             cityData.filter((value) => value.country
@@ -44,7 +48,7 @@ function Home() {
                   className="card-country"
                   state={data.capital === null ? '' : { country: data.country, capital: data.capital, flags: data.flags }}
                 >
-                  {/* <p className="detail-btn"><BsArrowRightCircle /></p> */}
+                  <p className="detail-btn"><BsArrowRightCircle /></p>
 
                   <p className="country-name">{data.country.toUpperCase()}</p>
 
