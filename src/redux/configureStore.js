@@ -1,15 +1,12 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import logger from 'redux-logger';
-import thunkMiddleware from 'redux-thunk';
-import artReducer from './art/art';
+import { combineReducers, applyMiddleware, createStore } from 'redux';
+import thunk from 'redux-thunk';
+import cityReducer from './cities';
+import weatherReducer from './weather';
 
-const reducer = combineReducers({
-  artReducer,
+const rootReducer = combineReducers({
+  weatherData: weatherReducer,
+  cityData: cityReducer,
 });
-
-const store = createStore(
-  reducer,
-  applyMiddleware(logger, thunkMiddleware),
-);
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 export default store;
