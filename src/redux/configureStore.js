@@ -1,7 +1,7 @@
 import { combineReducers, applyMiddleware, createStore } from 'redux';
 import thunk from 'redux-thunk';
-import cityReducer from './cities';
-import weatherReducer from './weather';
+import cityReducer from './Cities';
+import weatherReducer from './Weather';
 
 const rootReducer = combineReducers({
   weatherData: weatherReducer,
