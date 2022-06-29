@@ -3,7 +3,7 @@ import { useLocation } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchData } from '../../Redux/weather';
 
-// import Card from './WeatherCard/ard';
+// import Card from './WeatherCard/card';
 import './detail.css';
 
 function Detail() {
