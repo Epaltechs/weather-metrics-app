@@ -1,8 +1,6 @@
 # Weather-Metrics-App
 
-This metrics weather application uses an open weather API to display weather updates of different capital cities in the continent of Africa
-
-The weather updates is fetched from [Open Weather API](https://openweathermap.org/api).
+This metrics weather application uses the weather updates fetched from [Open Weather API](https://openweathermap.org/api) to display weather updates of different capital cities in the continent of Africa.
 
 ## DEMO
 <img src="./src/assets/demo-gif.gif" alt="app-demo"/>
