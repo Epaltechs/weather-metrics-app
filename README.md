@@ -1,13 +1,9 @@
-# Weather-App
+# Weather-Metrics-App
 
->> A weather application that display weather updates of different capital cities
-
-The weather updates is fetched from [Open Weather API](https://openweathermap.org/api).
+This metrics weather application uses the weather updates fetched from [Open Weather API](https://openweathermap.org/api) to display weather updates of different capital cities in the continent of Africa.
 
 ## DEMO
-<img src="./src/assets/demo-gif.gif" alt="app-demo"/>
-
-## 🔴 [LIVE LINK](https://62b9c319ef5d2f4fb550e3fb--heartfelt-tapioca-356bb6.netlify.app/)
+<img src="./src/assets/Weather Demo.gif" alt="app-demo"/>
 
 
 ## Project Features
@@ -18,7 +14,7 @@ The weather updates is fetched from [Open Weather API](https://openweathermap.or
 ## VIDEO
 
 A video description of the project 
-[Loom](https://www.loom.com/share/5bb93ae6722e474f81600b04dd7ee8ce)
+[Loom](https://www.loom.com/share/f1f985559680473080971b567edbb233)
 
 ## Built With 🔨
 
@@ -26,35 +22,29 @@ A video description of the project
 - React
 - Redux
 
-## Setup
+## Getting Started
+To get a local copy open and running follow these simple example steps.
 
-### Clone this repository
+### Setup
+- Download or Clone Repository.
+- In case you downloaded repository Extract ZIP Folder.
 
-```bash
-$ git clone https://github.com/jmoseka/weather-app.git
-$ cd Meals-A-Day
-```
+### Installation
+- One folder in your text editor.
+- Run `npm install` command to install all dependencies.
+*N.B: Make sure that you have node installed in your commputer, if not [Download Node](https://nodejs.org/en/)*
 
-### Run project
+### Usage
+To use this project run `npm start` command in terminal of your editor project will start automatically after whille
 
-```bash
-$ npm install
-$ npm run start
-```
+## Author
 
-### Prerequisites
+👤 **Emmanuel Paul**
 
-- IDE (VCode For me 🔥).
-- Git and GitHub
-- npm and node.js installed.
-
-## Authors
-
-👤 **Jamila Moseka**
-
-- GitHub: [@jmoseka](https://github.com/jmoseka)
-- Twitter: [milamoseka](https://twitter.com/milamoseka)
-- LinkedIn: [jamila-moseka](https://www.linkedin.com/in/jamila-moseka/)
+- GitHub: [Emmanuel Paul](https://github.com/Epaltechs/weather-metrics)
+- Twitter: [Emmanuel Paul](http://twitter.com/@emmapaul247)
+- LinkedIn: [Emmanuel Paul](https://www.linkedin.com/in/emmanuel-paul-a2bab7b4/)
+- AngeList: [Emmanuel Paul](https://angel.co/u/emmanuel-s-paul)
 
 ## 🤝 Contributing
 
