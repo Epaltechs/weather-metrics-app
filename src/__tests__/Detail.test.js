@@ -6,7 +6,7 @@ import { screen } from '@testing-library/react';
 import Detail from '../Components/Detail/Detail';
 import store from '../Redux/configureStore';
 
-test('Home should render correctly', () => {
+test('Detail should render correctly', () => {
   const body = document.createElement('body');
   ReactDOM.render(
     <Provider store={store}>
