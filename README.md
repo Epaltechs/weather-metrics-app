@@ -3,7 +3,9 @@
 This metrics weather application uses the weather updates fetched from [Open Weather API](https://openweathermap.org/api) to display weather updates of different capital cities in the continent of Africa.
 
 ## DEMO
+
 <img src="./src/assets/Weather Demo.gif" alt="app-demo"/>
+
 
 
 ## Project Features
@@ -19,6 +21,7 @@ This metrics weather application uses the weather updates fetched from [Open Wea
 - HTML - CSS - JavaScript(ES6)
 - React
 - Redux
+
 
 ## Getting Started
 To get a local copy open and running follow these simple example steps.
@@ -57,5 +60,52 @@ Give a ⭐️ if you like this project!
 Original design idea is by Nelson Sakwa in [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
 
 ## 📝 License
+
+
+## Setup
+
+### Clone this repository
+
+```bash
+$ git clone https://github.com/jmoseka/weather-app.git
+$ cd Meals-A-Day
+```
+
+### Run project
+
+```bash
+$ npm install
+$ npm run start
+```
+
+### Prerequisites
+
+- IDE (VCode For me 🔥).
+- Git and GitHub
+- npm and node.js installed.
+
+## Author
+
+👤 **Emmanuel Paul**
+
+- GitHub: (https://github.com/Epaltechs)
+- Twitter: [https://twitter.com/@emmapaul247]
+- LinkedIn: [https://www.linkedin.com/in/emmanuel-s-paul]
+- AngeList: [https://angel.co/u/emmanuel-s-paul]
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+Original design idea is by Nelson Sakwa in [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
+
+## 📝 License
+
 
 This project is [MIT](./MIT.md) licensed.

@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import { screen } from '@testing-library/react';
-import Home from '../Pages/Home/home';
+import Home from '../Components/Home/home';
 import store from '../Redux/configureStore';
 
 test('Home should render correctly', () => {

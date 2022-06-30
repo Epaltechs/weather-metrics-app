@@ -66,3 +66,5 @@ export default function weatherReducer(state = [], action) {
       return state;
   }
 }
+
+// API url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=f1354fda8bec32646187c58f25f48372`;
