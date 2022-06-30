@@ -3,7 +3,9 @@
 This metrics weather application uses the weather updates fetched from [Open Weather API](https://openweathermap.org/api) to display weather updates of different capital cities in the continent of Africa.
 
 ## DEMO
+
 <img src="./src/assets/Weather Demo.gif" alt="app-demo"/>
+
 
 
 ## Project Features
@@ -13,14 +15,13 @@ This metrics weather application uses the weather updates fetched from [Open Wea
 
 ## VIDEO
 
-A video description of the project 
-[Loom](https://www.loom.com/share/f1f985559680473080971b567edbb233)
 
 ## Built With 🔨
 
 - HTML - CSS - JavaScript(ES6)
 - React
 - Redux
+
 
 ## Getting Started
 To get a local copy open and running follow these simple example steps.
@@ -59,5 +60,3 @@ Give a ⭐️ if you like this project!
 Original design idea is by Nelson Sakwa in [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
 
 ## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
