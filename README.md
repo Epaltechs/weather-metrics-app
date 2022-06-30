@@ -44,8 +44,6 @@ $ npm run start
 - Git and GitHub
 - npm and node.js installed.
 
-## Authors
-
 ## Author
 
 👤 **Emmanuel Paul**
