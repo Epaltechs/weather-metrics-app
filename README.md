@@ -1,13 +1,11 @@
-# Weather-App
+# Weather-Metrics-App
 
->> A weather application that display weather updates of different capital cities
+This metrics weather application uses an open weather API to display weather updates of different capital cities in the continent of Africa
 
 The weather updates is fetched from [Open Weather API](https://openweathermap.org/api).
 
 ## DEMO
 <img src="./src/assets/demo-gif.gif" alt="app-demo"/>
-
-## 🔴 [LIVE LINK](https://62b9c319ef5d2f4fb550e3fb--heartfelt-tapioca-356bb6.netlify.app/)
 
 
 ## Project Features
@@ -50,11 +48,14 @@ $ npm run start
 
 ## Authors
 
-👤 **Jamila Moseka**
+## Author
 
-- GitHub: [@jmoseka](https://github.com/jmoseka)
-- Twitter: [milamoseka](https://twitter.com/milamoseka)
-- LinkedIn: [jamila-moseka](https://www.linkedin.com/in/jamila-moseka/)
+👤 **Emmanuel Paul**
+
+- GitHub: (https://github.com/Epaltechs)
+- Twitter: [https://twitter.com/@emmapaul247]
+- LinkedIn: [https://www.linkedin.com/in/emmanuel-s-paul]
+- AngeList: [https://angel.co/u/emmanuel-s-paul]
 
 ## 🤝 Contributing
 
