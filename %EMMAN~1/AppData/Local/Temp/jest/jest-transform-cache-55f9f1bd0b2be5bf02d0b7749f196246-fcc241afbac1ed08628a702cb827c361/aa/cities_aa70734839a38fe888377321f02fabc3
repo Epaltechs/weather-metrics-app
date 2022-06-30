@@ -1,0 +1,64 @@
+ee850a2853c6e48fee070162ea61d3b0
+"use strict";
+
+var _interopRequireDefault = require("C:/Users/Otomfon/Desktop/weather-metrics/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = cityReducer;
+exports.getCities = exports.fetchCity = void 0;
+
+var _axios = _interopRequireDefault(require("axios"));
+
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+
+var _jsxFileName = "C:\\Users\\Otomfon\\Desktop\\weather-metrics\\src\\Redux\\cities.js";
+const GET_CITY = 'weather-app/cityReducer/getCities';
+const url = 'https://restcountries.com/v3.1/region/africa';
+
+const getCities = payload => ({
+  type: GET_CITY,
+  payload
+});
+
+exports.getCities = getCities;
+
+const fetchCity = () => async dispatch => {
+  const response = await _axios.default.get(url);
+  const data = await response.data;
+  const cities = [];
+
+  try {
+    data.forEach(el => {
+      cities.push({
+        country: el.name.common,
+        flags: el.flags.png,
+        capital: el.capital[0]
+      });
+    });
+    dispatch(getCities(cities));
+  } catch (error) {
+    /*#__PURE__*/
+    (0, _jsxDevRuntime.jsxDEV)("h2", {
+      children: error
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 5
+    }, void 0);
+  }
+};
+
+exports.fetchCity = fetchCity;
+
+function cityReducer(state = [], action) {
+  switch (action.type) {
+    case GET_CITY:
+      return action.payload;
+
+    default:
+      return state;
+  }
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJHRVRfQ0lUWSIsInVybCIsImdldENpdGllcyIsInBheWxvYWQiLCJ0eXBlIiwiZmV0Y2hDaXR5IiwiZGlzcGF0Y2giLCJyZXNwb25zZSIsImF4aW9zIiwiZ2V0IiwiZGF0YSIsImNpdGllcyIsImZvckVhY2giLCJlbCIsInB1c2giLCJjb3VudHJ5IiwibmFtZSIsImNvbW1vbiIsImZsYWdzIiwicG5nIiwiY2FwaXRhbCIsImVycm9yIiwiY2l0eVJlZHVjZXIiLCJzdGF0ZSIsImFjdGlvbiJdLCJzb3VyY2VzIjpbImNpdGllcy5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgYXhpb3MgZnJvbSAnYXhpb3MnO1xyXG5cclxuY29uc3QgR0VUX0NJVFkgPSAnd2VhdGhlci1hcHAvY2l0eVJlZHVjZXIvZ2V0Q2l0aWVzJztcclxuXHJcbmNvbnN0IHVybCA9ICdodHRwczovL3Jlc3Rjb3VudHJpZXMuY29tL3YzLjEvcmVnaW9uL2FmcmljYSc7XHJcblxyXG5leHBvcnQgY29uc3QgZ2V0Q2l0aWVzID0gKHBheWxvYWQpID0+ICh7XHJcbiAgdHlwZTogR0VUX0NJVFksXHJcbiAgcGF5bG9hZCxcclxufSk7XHJcblxyXG5leHBvcnQgY29uc3QgZmV0Y2hDaXR5ID0gKCkgPT4gYXN5bmMgKGRpc3BhdGNoKSA9PiB7XHJcbiAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBheGlvcy5nZXQodXJsKTtcclxuICBjb25zdCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuZGF0YTtcclxuICBjb25zdCBjaXRpZXMgPSBbXTtcclxuICB0cnkge1xyXG4gICAgZGF0YS5mb3JFYWNoKChlbCkgPT4ge1xyXG4gICAgICBjaXRpZXMucHVzaCh7XHJcbiAgICAgICAgY291bnRyeTogZWwubmFtZS5jb21tb24sXHJcbiAgICAgICAgZmxhZ3M6IGVsLmZsYWdzLnBuZyxcclxuICAgICAgICBjYXBpdGFsOiBlbC5jYXBpdGFsWzBdLFxyXG4gICAgICB9KTtcclxuICAgIH0pO1xyXG4gICAgZGlzcGF0Y2goZ2V0Q2l0aWVzKGNpdGllcykpO1xyXG4gIH0gY2F0Y2ggKGVycm9yKSB7XHJcbiAgICA8aDI+e2Vycm9yfTwvaDI+O1xyXG4gIH1cclxufTtcclxuXHJcbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIGNpdHlSZWR1Y2VyKHN0YXRlID0gW10sIGFjdGlvbikge1xyXG4gIHN3aXRjaCAoYWN0aW9uLnR5cGUpIHtcclxuICAgIGNhc2UgR0VUX0NJVFk6XHJcbiAgICAgIHJldHVybiBhY3Rpb24ucGF5bG9hZDtcclxuICAgIGRlZmF1bHQ6XHJcbiAgICAgIHJldHVybiBzdGF0ZTtcclxuICB9XHJcbn1cclxuIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQUE7Ozs7O0FBRUEsTUFBTUEsUUFBUSxHQUFHLG1DQUFqQjtBQUVBLE1BQU1DLEdBQUcsR0FBRyw4Q0FBWjs7QUFFTyxNQUFNQyxTQUFTLEdBQUlDLE9BQUQsS0FBYztFQUNyQ0MsSUFBSSxFQUFFSixRQUQrQjtFQUVyQ0c7QUFGcUMsQ0FBZCxDQUFsQjs7OztBQUtBLE1BQU1FLFNBQVMsR0FBRyxNQUFNLE1BQU9DLFFBQVAsSUFBb0I7RUFDakQsTUFBTUMsUUFBUSxHQUFHLE1BQU1DLGNBQUEsQ0FBTUMsR0FBTixDQUFVUixHQUFWLENBQXZCO0VBQ0EsTUFBTVMsSUFBSSxHQUFHLE1BQU1ILFFBQVEsQ0FBQ0csSUFBNUI7RUFDQSxNQUFNQyxNQUFNLEdBQUcsRUFBZjs7RUFDQSxJQUFJO0lBQ0ZELElBQUksQ0FBQ0UsT0FBTCxDQUFjQyxFQUFELElBQVE7TUFDbkJGLE1BQU0sQ0FBQ0csSUFBUCxDQUFZO1FBQ1ZDLE9BQU8sRUFBRUYsRUFBRSxDQUFDRyxJQUFILENBQVFDLE1BRFA7UUFFVkMsS0FBSyxFQUFFTCxFQUFFLENBQUNLLEtBQUgsQ0FBU0MsR0FGTjtRQUdWQyxPQUFPLEVBQUVQLEVBQUUsQ0FBQ08sT0FBSCxDQUFXLENBQVg7TUFIQyxDQUFaO0lBS0QsQ0FORDtJQU9BZCxRQUFRLENBQUNKLFNBQVMsQ0FBQ1MsTUFBRCxDQUFWLENBQVI7RUFDRCxDQVRELENBU0UsT0FBT1UsS0FBUCxFQUFjO0lBQ2Q7SUFBQTtNQUFBLFVBQUtBO0lBQUw7TUFBQTtNQUFBO01BQUE7SUFBQTtFQUNEO0FBQ0YsQ0FoQk07Ozs7QUFrQlEsU0FBU0MsV0FBVCxDQUFxQkMsS0FBSyxHQUFHLEVBQTdCLEVBQWlDQyxNQUFqQyxFQUF5QztFQUN0RCxRQUFRQSxNQUFNLENBQUNwQixJQUFmO0lBQ0UsS0FBS0osUUFBTDtNQUNFLE9BQU93QixNQUFNLENBQUNyQixPQUFkOztJQUNGO01BQ0UsT0FBT29CLEtBQVA7RUFKSjtBQU1EIn0=

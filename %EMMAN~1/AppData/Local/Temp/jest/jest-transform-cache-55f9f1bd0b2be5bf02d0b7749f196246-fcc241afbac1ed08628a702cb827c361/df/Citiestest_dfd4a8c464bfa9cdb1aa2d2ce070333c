@@ -1,0 +1,25 @@
+a02593c26235610b9a4805dff75d6c01
+"use strict";
+
+var _interopRequireWildcard = require("C:/Users/Otomfon/Desktop/weather-metrics/node_modules/@babel/runtime/helpers/interopRequireWildcard.js").default;
+
+var _Cities = _interopRequireWildcard(require("../Redux/Cities"));
+
+const action = payload => ({
+  type: 'GET_CITY',
+  payload
+});
+
+describe('Should test weather reducer', () => {
+  it('Should return an array on api call', async () => {
+    const data1 = await _Cities.fetchCity;
+    expect(data1.length).toBe(0);
+  });
+  it('Should return an array on api call', () => {
+    expect((0, _Cities.getCities)(action.payload)).toBeInstanceOf(Object);
+  });
+  it('Should return an array when fetch tasks in task reducer is called', () => {
+    expect((0, _Cities.default)([], action)).toBeInstanceOf(Array);
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJhY3Rpb24iLCJwYXlsb2FkIiwidHlwZSIsImRlc2NyaWJlIiwiaXQiLCJkYXRhMSIsImZldGNoQ2l0eSIsImV4cGVjdCIsImxlbmd0aCIsInRvQmUiLCJnZXRDaXRpZXMiLCJ0b0JlSW5zdGFuY2VPZiIsIk9iamVjdCIsImNpdHlSZWR1Y2VyIiwiQXJyYXkiXSwic291cmNlcyI6WyJDaXRpZXMudGVzdC5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgY2l0eVJlZHVjZXIsIHsgZmV0Y2hDaXR5LCBnZXRDaXRpZXMgfSBmcm9tICcuLi9SZWR1eC9DaXRpZXMnO1xuXG5jb25zdCBhY3Rpb24gPSAocGF5bG9hZCkgPT4gKHtcbiAgdHlwZTogJ0dFVF9DSVRZJyxcbiAgcGF5bG9hZCxcbn0pO1xuXG5kZXNjcmliZSgnU2hvdWxkIHRlc3Qgd2VhdGhlciByZWR1Y2VyJywgKCkgPT4ge1xuICBpdCgnU2hvdWxkIHJldHVybiBhbiBhcnJheSBvbiBhcGkgY2FsbCcsIGFzeW5jICgpID0+IHtcbiAgICBjb25zdCBkYXRhMSA9IGF3YWl0IGZldGNoQ2l0eTtcbiAgICBleHBlY3QoZGF0YTEubGVuZ3RoKS50b0JlKDApO1xuICB9KTtcblxuICBpdCgnU2hvdWxkIHJldHVybiBhbiBhcnJheSBvbiBhcGkgY2FsbCcsICgpID0+IHtcbiAgICBleHBlY3QoZ2V0Q2l0aWVzKGFjdGlvbi5wYXlsb2FkKSkudG9CZUluc3RhbmNlT2YoT2JqZWN0KTtcbiAgfSk7XG4gIGl0KCdTaG91bGQgcmV0dXJuIGFuIGFycmF5IHdoZW4gZmV0Y2ggdGFza3MgaW4gdGFzayByZWR1Y2VyIGlzIGNhbGxlZCcsICgpID0+IHtcbiAgICBleHBlY3QoY2l0eVJlZHVjZXIoW10sIGFjdGlvbikpLnRvQmVJbnN0YW5jZU9mKEFycmF5KTtcbiAgfSk7XG59KTtcbiJdLCJtYXBwaW5ncyI6Ijs7OztBQUFBOztBQUVBLE1BQU1BLE1BQU0sR0FBSUMsT0FBRCxLQUFjO0VBQzNCQyxJQUFJLEVBQUUsVUFEcUI7RUFFM0JEO0FBRjJCLENBQWQsQ0FBZjs7QUFLQUUsUUFBUSxDQUFDLDZCQUFELEVBQWdDLE1BQU07RUFDNUNDLEVBQUUsQ0FBQyxvQ0FBRCxFQUF1QyxZQUFZO0lBQ25ELE1BQU1DLEtBQUssR0FBRyxNQUFNQyxpQkFBcEI7SUFDQUMsTUFBTSxDQUFDRixLQUFLLENBQUNHLE1BQVAsQ0FBTixDQUFxQkMsSUFBckIsQ0FBMEIsQ0FBMUI7RUFDRCxDQUhDLENBQUY7RUFLQUwsRUFBRSxDQUFDLG9DQUFELEVBQXVDLE1BQU07SUFDN0NHLE1BQU0sQ0FBQyxJQUFBRyxpQkFBQSxFQUFVVixNQUFNLENBQUNDLE9BQWpCLENBQUQsQ0FBTixDQUFrQ1UsY0FBbEMsQ0FBaURDLE1BQWpEO0VBQ0QsQ0FGQyxDQUFGO0VBR0FSLEVBQUUsQ0FBQyxtRUFBRCxFQUFzRSxNQUFNO0lBQzVFRyxNQUFNLENBQUMsSUFBQU0sZUFBQSxFQUFZLEVBQVosRUFBZ0JiLE1BQWhCLENBQUQsQ0FBTixDQUFnQ1csY0FBaEMsQ0FBK0NHLEtBQS9DO0VBQ0QsQ0FGQyxDQUFGO0FBR0QsQ0FaTyxDQUFSIn0=
