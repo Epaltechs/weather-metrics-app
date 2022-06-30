@@ -42,10 +42,21 @@ To use this project run `npm start` command in terminal of your editor project w
 
 👤 **Emmanuel Paul**
 
+<<<<<<< HEAD
 - GitHub: [Emmanuel Paul](https://github.com/Epaltechs/weather-metrics)
 - Twitter: [Emmanuel Paul](http://twitter.com/@emmapaul247)
 - LinkedIn: [Emmanuel Paul](https://www.linkedin.com/in/emmanuel-paul-a2bab7b4/)
 - AngeList: [Emmanuel Paul](https://angel.co/u/emmanuel-s-paul)
+=======
+## Author
+
+👤 **Emmanuel Paul**
+
+- GitHub: (https://github.com/Epaltechs)
+- Twitter: [https://twitter.com/@emmapaul247]
+- LinkedIn: [https://www.linkedin.com/in/emmanuel-s-paul]
+- AngeList: [https://angel.co/u/emmanuel-s-paul]
+>>>>>>> d56869e2467a03a79047f760ef646575ef4f8566
 
 ## 🤝 Contributing
 
