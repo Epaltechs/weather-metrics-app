@@ -6,6 +6,8 @@ This metrics weather application uses the weather updates fetched from [Open Wea
 
 <img src="./src/assets/Weather Demo.gif" alt="app-demo"/>
 
+[Deployment](https://epaltechs.github.io/weather-metrics-app/)
+
 
 
 ## Project Features
