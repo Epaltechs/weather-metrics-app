@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# Weather-Metrics-App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This metrics weather application uses the weather updates fetched from [Open Weather API](https://openweathermap.org/api) to display weather updates of different capital cities in the continent of Africa.
 
-## Available Scripts
+## DEMO
 
-In the project directory, you can run:
+<img src="./src/assets/Weather Demo.gif" alt="app-demo"/>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Features
 
-### `npm test`
+- Displays list of countries, flag and capital city
+- Display weather updates of each countr's capital city
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## VIDEO
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Built With 🔨
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- HTML - CSS - JavaScript(ES6)
+- React
+- Redux
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Getting Started
+To get a local copy open and running follow these simple example steps.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Setup
+- Download or Clone Repository.
+- In case you downloaded repository Extract ZIP Folder.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
+- One folder in your text editor.
+- Run `npm install` command to install all dependencies.
+*N.B: Make sure that you have node installed in your commputer, if not [Download Node](https://nodejs.org/en/)*
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Usage
+To use this project run `npm start` command in terminal of your editor project will start automatically after whille
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Author
 
-## Learn More
+👤 **Emmanuel Paul**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- GitHub: [Emmanuel Paul](https://github.com/Epaltechs/weather-metrics)
+- Twitter: [Emmanuel Paul](http://twitter.com/@emmapaul247)
+- LinkedIn: [Emmanuel Paul](https://www.linkedin.com/in/emmanuel-paul-a2bab7b4/)
+- AngeList: [Emmanuel Paul](https://angel.co/u/emmanuel-s-paul)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
 
-### Code Splitting
+Contributions, issues and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Show your support
 
-### Analyzing the Bundle Size
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgments
 
-### Making a Progressive Web App
+Original design idea is by Nelson Sakwa in [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📝 License
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Setup
 
-### Deployment
+### Clone this repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+$ git clone https://github.com/jmoseka/weather-app.git
+$ cd Meals-A-Day
+```
 
-### `npm run build` fails to minify
+### Run project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+$ npm install
+$ npm run start
+```
+
+### Prerequisites
+
+- IDE (VCode For me 🔥).
+- Git and GitHub
+- npm and node.js installed.
+
+## Author
+
+👤 **Emmanuel Paul**
+
+- GitHub: (https://github.com/Epaltechs)
+- Twitter: [https://twitter.com/@emmapaul247]
+- LinkedIn: [https://www.linkedin.com/in/emmanuel-s-paul]
+- AngeList: [https://angel.co/u/emmanuel-s-paul]
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+Original design idea is by Nelson Sakwa in [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
+
+## 📝 License
+
+
+This project is [MIT](./MIT.md) licensed.
