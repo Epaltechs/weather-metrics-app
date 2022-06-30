@@ -20,7 +20,7 @@
     "import/no-unresolved": "off",
     "no-shadow": "off",
     "linebreak-style": 0,
-    "import/extensions": ["error", "ignorePackages",
+    "import/extensions": ["off", "ignorePackages",
       {
       "js": "never",
       "mjs": "never",
