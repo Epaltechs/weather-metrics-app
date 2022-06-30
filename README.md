@@ -13,8 +13,6 @@ This metrics weather application uses the weather updates fetched from [Open Wea
 
 ## VIDEO
 
-A video description of the project 
-[Loom](https://www.loom.com/share/5bb93ae6722e474f81600b04dd7ee8ce)
 
 ## Built With 🔨
 
