@@ -15,7 +15,8 @@ This metrics weather application uses the weather updates fetched from [Open Wea
 
 ## VIDEO
 The video link that gives the description of the project.
-(https://www.loom.com/share/f1f985559680473080971b567edbb233)
+[Loom](https://www.loom.com/share/f1f985559680473080971b567edbb233)
+
 
 ## Built With 🔨
 
