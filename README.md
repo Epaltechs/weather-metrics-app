@@ -19,6 +19,7 @@ This metrics weather application uses the weather updates fetched from [Open Wea
 
 ## VIDEO
 The video link that gives the description of the project.
+      
 [Loom](https://www.loom.com/share/f1f985559680473080971b567edbb233)
 
 
@@ -63,6 +64,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-Original design idea is by Nelson Sakwa in [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
+Original design is curated by Nelson Sakwa in [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
 
 ## 📝 License
