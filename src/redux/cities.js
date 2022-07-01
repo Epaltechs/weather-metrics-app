@@ -23,7 +23,7 @@ export const fetchCity = () => async (dispatch) => {
     });
     dispatch(getCities(cities));
   } catch (error) {
-    <h2>{error}</h2>;
+    // <h2>{error}</h2>;
   }
 };
 
