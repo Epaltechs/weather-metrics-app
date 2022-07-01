@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchData } from '../../Redux/Weather';
+import { fetchData } from '../../redux/weather';
 
 import Card from './WeatherCard/Card';
 import './Detail.css';

@@ -5,7 +5,7 @@ import { FiSearch } from 'react-icons/fi';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import './Home.css';
 import { Link } from 'react-router-dom';
-import { fetchCity } from '../../Redux/Cities';
+import { fetchCity } from '../../redux/cities';
 
 function Home() {
   const dispatch = useDispatch();

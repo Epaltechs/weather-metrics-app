@@ -52,9 +52,9 @@ export const fetchData = (location) => async (dispatch) => {
     weatherData.icon = icon;
 
     weatherData.timezone = timezone_offset;
-    dispatch(getData(weatherData));
+    return dispatch(getData(weatherData));
   } catch (error) {
-    // <h2>error</h2>;
+    return error;
   }
 };
 

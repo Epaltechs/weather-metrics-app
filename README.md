@@ -5,7 +5,9 @@ This metrics weather application uses the weather updates fetched from [Open Wea
 ## DEMO
 
 <img src="./src/assets/Weather Demo.gif" alt="app-demo"/>
-[Deployment]
+
+[Netlify]https://my-weather-metrics-app.netlify.app)
+[Heroku](https://weather-metrics-app.herokuapp.com)
 
 
 ## Project Features

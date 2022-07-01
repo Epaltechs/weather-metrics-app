@@ -21,9 +21,9 @@ export const fetchCity = () => async (dispatch) => {
         capital: el.capital[0],
       });
     });
-    dispatch(getCities(cities));
+    return dispatch(getCities(cities));
   } catch (error) {
-    // <h2>{error}</h2>;
+    return error;
   }
 };
 
