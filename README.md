@@ -8,7 +8,7 @@ This metrics weather application uses the weather updates fetched from [Open Wea
 
 ## Deployments
 
-[Netlify](https://my-weather-metrics-app.netlify.app) / 
+[Netlify](https://epal-weather-metrics-app.netlify.app) / 
 [Heroku](https://weather-metrics-app.herokuapp.com)
 
 
@@ -50,9 +50,9 @@ To use this project run `npm start` command in terminal of your editor project w
 👤 **Emmanuel Paul**
 
 - GitHub: [Emmanuel Paul](https://github.com/Epaltechs/weather-metrics)
-- Twitter: [Emmanuel Paul](http://twitter.com/@emmapaul247)
+- X(Twitter): [Emmanuel Paul](http://twitter.com/@emmapaul247)
 - LinkedIn: [Emmanuel Paul](https://www.linkedin.com/in/emmanuel-paul-a2bab7b4/)
-- AngeList: [Emmanuel Paul](https://angel.co/u/emmanuel-s-paul)
+- Wellfound(AngeList): [Emmanuel Paul](https://angel.co/u/emmanuel-s-paul)
 
 ## 🤝 Contributing
 
