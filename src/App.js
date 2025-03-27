@@ -3,7 +3,7 @@ import './App.css';
 import React from 'react';
 import Home from './Components/Home/home';
 import Detail from './Components/Detail/Detail';
-import Navbar from './Components/Navbar/Navbar';
+import Navbar from './Components/Navbar/navbar';
 
 function App() {
   return (
